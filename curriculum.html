@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label id="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>    
+       
+    <h1>Curriculum vitae de Cristian Sández</h1>
+    
+    <hr>
+        <header>    
+             <img src="lele.jpg" alt="Foto del perfil de Cristian Sández">
+                    
+                    
+       <div>     
+        <h2>&#9830 Informacion personal</h2>
+            <p><b>Nombre: </b>Cristian Sández</p>
+            <p><b>Fecha nacimiento: </b>09/05/1992</p>
+            <p><b>Dirección: </b>Lincoln 406, Rafaela Santa Fe, Argentina</p>
+        </div>
+        </header>
+    <section>
+    <div>   
+        <h2>&#9830 Experiencias</h2>
+    
+            <ul>
+                <li>Técnico informatico</li>
+                <li>Técnico en telecomunicaciones</li>
+                <li>Diseñador grafico</li>
+                <li>Automatizaciones/Domotica</li>
+                <li>Programacion en Ardiono, HTML, CSS, JavaScript y Java</li>
+            </ul>
+<hr>        
+        <h2>&#9830 Habilidades</h2>
+    
+            <ul>
+                <li>Informatica para armado de PC, configuraciones. Redes FTTH, HFC, enlaces privados.</li>
+                <li>Diseño asistido por AutoCAD en 2D y 3D, para armado de tornos CNC, impresoras 3D y automatizacion de maquinas de todo tipo.</li>
+                <li>Inglés básico</li>
+            </ul>
+           
+    </div>
+    
+<hr>
+        <p>Cristian.lele34@gmail.com - +549 342 524 4235 - Linkedin: Cristian Sández</p> 
+
+        <a href="https://wa.me/5493425244235?text=Contactar" target="_blank">Contactar</a>
+    </section>
+    <script>
+        const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+        function cambiaTema(ev){
+            if(ev.target.checked){
+                document.documentElement.setAttribute('tema', 'dark');
+            } else {
+                document.documentElement.setAttribute('tema', 'light');
+            }
+        }
+        colorSwitch.addEventListener('change', cambiaTema);
+    </script>
+</body>
+</html>
